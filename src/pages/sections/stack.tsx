@@ -1,11 +1,9 @@
 import { Badge } from "@/components/ui/badge";
 import {
   Cpu,
-  Code2,
   Database,
   Terminal,
   Layout,
-  ShieldCheck,
 } from "lucide-react";
 
 const SKILLS = [

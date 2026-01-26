@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Send, Github, Linkedin, MessageSquareQuote } from "lucide-react";
+import { Mail, Send, MessageSquareQuote } from "lucide-react";
 
 export const Contact = () => {
   return (
