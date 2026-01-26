@@ -1,0 +1,31 @@
+[
+	{
+		"id": 1,
+		"title": "E-Commerce API",
+		"description": "Node.js va Express yordamida qurilgan to'liq backend tizimi. JWT autentifikatsiya va Stripe to'lov tizimi integratsiyasi bor.",
+		"techStack": [
+			"Node.js",
+			"Express",
+			"MongoDB",
+			"Redis"
+		],
+		"githubLink": "https://github.com/username/project",
+		"liveDemo": "https://demo.com",
+		"image": "/images/project1.jpg",
+		"featured": true
+	},
+	{
+		"id": 2,
+		"title": "Real-time Chat App",
+		"description": "Socket.io yordamida yaratilgan tezkor xabarlashuv ilovasi.",
+		"techStack": [
+			"React",
+			"Socket.io",
+			"Tailwind CSS"
+		],
+		"githubLink": "https://github.com/username/chat",
+		"liveDemo": null,
+		"image": "/images/project2.jpg",
+		"featured": false
+	}
+]
