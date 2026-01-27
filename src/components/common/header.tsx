@@ -2,6 +2,16 @@ import { CopyButton } from "@/utils/copyButton";
 import { ThemeToggle } from "@/utils/themetoggle";
 import { Button } from "@/custom/button";
 import { useState, useEffect } from "react";
+import resume from "@/assets/Adham_FullStack.DEV.pdf";
+import man from "@/assets/man.png";
+
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 export const Header = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -66,6 +76,32 @@ export const Header = () => {
           >
             ADHAM<span className="text-muted-foreground">.dev</span>
           </a>
+
+          <Dialog>
+            <DialogTrigger asChild>
+              <div className="w-10 h-10 rounded-full overflow-hidden border border-border shrink-0 cursor-pointer hover:ring-2 hover:ring-primary/50 transition-all">
+                <img
+                  src={man}
+                  alt="developer"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </DialogTrigger>
+
+            <DialogContent className="sm:max-w-106.25 p-0 overflow-hidden bg-transparent border-none shadow-none flex items-center justify-center">
+              <VisuallyHidden>
+                <DialogTitle>Developer Profile Picture</DialogTitle>
+              </VisuallyHidden>
+
+              <div className="relative w-full aspect-square max-w-150 rounded-full overflow-hidden border-4 border-background shadow-2xl animate-in zoom-in duration-300">
+                <img
+                  src={man}
+                  alt="developer large"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
 
         {/* Navigation */}
@@ -104,9 +140,12 @@ export const Header = () => {
           <Button
             variant="secondary"
             size="sm"
-            className="hidden sm:flex h-9 rounded-xl hover:animate-out"
+            asChild
+            className="sm:flex h-9 rounded-xl hover:animate-out hover:bg-primary hover:text-primary-foreground transition-all duration-300"
           >
-            Resume
+            <a href={resume} target="_blank" rel="noreferrer">
+              Resume
+            </a>
           </Button>
         </div>
       </nav>

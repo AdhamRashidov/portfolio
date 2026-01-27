@@ -15,9 +15,14 @@ export const Projects = () => {
       {/* Sarlavha bloki */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
         <div className="space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-mono font-bold uppercase tracking-wider">
-            <Layers size={14} />
-            <span>Portfolio</span>
+          <div className="group inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-linear-to-r from-primary/10 to-transparent border-l-2 border-primary transition-all duration-300 hover:gap-3">
+            <Layers
+              size={14}
+              className="text-primary transition-transform group-hover:scale-110"
+            />
+            <span className="text-[12px] font-black uppercase tracking-widest text-foreground/80 group-hover:text-primary transition-colors">
+              Portfolio
+            </span>
           </div>
           <h2 className="text-4xl font-bold tracking-tight italic lg:text-5xl">
             Saralangan Loyihalar

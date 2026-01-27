@@ -1,7 +1,5 @@
-
-
 import { fetchRepos, fetchAllRepos } from "@/hooks/gitHubService";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/custom/button";
 import {
   Sheet,
   SheetContent,
@@ -14,9 +12,10 @@ import {
   Github,
   Star,
   ExternalLink,
-  BookMarked,
   Loader2,
   User,
+  Code2,
+  ArrowUpRight,
 } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 
@@ -44,9 +43,14 @@ export const About = () => {
       {/* 1. Shaxsiy ma'lumotlar (Bio) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-mono font-bold uppercase tracking-wider">
-            <User size={14} />
-            <span>Men haqimda</span>
+          <div className="group inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-linear-to-r from-primary/10 to-transparent border-l-2 border-primary transition-all duration-300 hover:gap-3">
+            <User
+              size={14}
+              className="text-primary transition-transform group-hover:scale-110"
+            />
+            <span className="text-[12px] font-black uppercase tracking-widest text-foreground/80 group-hover:text-primary transition-colors">
+              O'zim haqimda
+            </span>
           </div>
           <h2 className="text-4xl font-bold tracking-tight italic lg:text-5xl">
             Murakkablikni soddalikka <br /> aylantiruvchi dasturchi.
@@ -63,7 +67,8 @@ export const About = () => {
           <p className="text-muted-foreground leading-relaxed text-lg max-w-2xl">
             Node.js backend tizimlari va React frontend ekotizimida ishlash
             tajribasiga egaman. Doimo yangi texnologiyalarni o'rganish va ularni
-            real loyihalarda qo'llashga intilaman.
+            real loyihalarda qo'llashga intilaman. Feedbacklarga har doim
+            ochiqman.
           </p>
         </div>
 
@@ -90,8 +95,15 @@ export const About = () => {
       <div className="space-y-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <Github className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-1">
+              <div className="p-1 rounded-full bg-primary">
+                <Github
+                  size={20}
+                  strokeWidth={2.5}
+                  fill="currentColor"
+                  className="text-primary-foreground"
+                />
+              </div>
               <h3 className="text-2xl font-bold italic">GitHub Faolligi</h3>
             </div>
             <p className="text-sm text-muted-foreground font-mono">
@@ -164,6 +176,7 @@ export const About = () => {
         </div>
 
         {/* Top Repos Grid */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {isTopLoading
             ? Array(6)
@@ -171,50 +184,69 @@ export const About = () => {
                 .map((_, i) => (
                   <div
                     key={i}
-                    className="h-44 rounded-2xl bg-muted/40 animate-pulse border border-border"
+                    className="h-56 rounded-2xl bg-muted/20 animate-pulse border border-border/50"
                   />
                 ))
             : topRepos?.map((repo: any) => (
                 <div
                   key={repo.id}
-                  className="group relative p-6 border border-border rounded-2xl bg-card hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5"
+                  className="group relative p-6 border border-primary/10 rounded-2xl bg-linear-to-br from-card to-background hover:border-primary/40 transition-all duration-500 hover:-translate-y-1"
                 >
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="p-2.5 bg-primary/5 rounded-xl border border-primary/10">
-                      <BookMarked className="w-5 h-5 text-primary" />
+                  {/* Yuqori dekorativ chiziq (Terminal darchasi kabi) */}
+                  <div className="absolute top-0 left-6 right-6 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent" />
+
+                  <div className="flex items-start justify-between mb-5">
+                    {/* Ikonka: Code style */}
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <div className="relative p-2.5 bg-card border  rounded-xl text-primary">
+                        <Code2 size={20} strokeWidth={2.5} />
+                      </div>
                     </div>
-                    <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-muted-foreground bg-muted/50 px-2 py-1 rounded-lg">
-                      <Star
-                        size={13}
-                        className="text-yellow-500 fill-yellow-500"
-                      />{" "}
-                      {repo.stargazers_count}
+
+                    {/* Star count: Dev style */}
+                    <div className="flex items-center gap-1.5 px-2 py-1 rounded-md bg-sidebar border text-[10px] font-mono font-bold text-yellow-500/80">
+                      <Star size={11} className="fill-yellow-500/20" />
+                      <span>
+                        {repo.stargazers_count.toString().padStart(2, "0")}
+                      </span>
                     </div>
                   </div>
 
-                  <h4 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors line-clamp-1 italic">
+                  {/* Repo Name: Shell path style */}
+                  <h4 className="font-mono font-bold text-base mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
+                    <span className="text-primary/50 text-xs">~/</span>
                     {repo.name}
                   </h4>
 
-                  <p className="text-sm text-muted-foreground line-clamp-2 mb-6 h-10 leading-relaxed">
+                  {/* Description */}
+                  <p className="text-xs text-muted-foreground line-clamp-2 mb-6 h-8 font-sans leading-relaxed">
                     {repo.description ||
-                      "Ushbu loyiha uchun qisqacha tavsif (README) yozilmagan."}
+                      "// No documentation provided for this module."}
                   </p>
 
-                  <div className="flex items-center justify-between pt-4 border-t border-border/50">
-                    <span className="text-[10px] font-mono font-bold px-2.5 py-1 bg-secondary text-secondary-foreground rounded-lg uppercase tracking-wider border border-border/50">
-                      {repo.language || "Project"}
-                    </span>
+                  {/* Footer: Metadata & Link */}
+                  <div className="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                    {/* Language: Status Badge */}
+                    <div className="flex items-center gap-2">
+                      <div
+                        className={`w-2 h-2 rounded-full animate-pulse ${repo.language ? "bg-primary" : "bg-zinc-600"}`}
+                      />
+                      <span className="text-[10px] font-mono font-bold text-foreground/70 uppercase tracking-tighter">
+                        {repo.language || "Binary"}
+                      </span>
+                    </div>
+
                     <a
                       href={repo.html_url}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-xs font-bold hover:text-primary transition-colors group/link"
+                      className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-primary/5 border border-primary/10 text-[11px] font-bold hover:bg-primary hover:text-primary-foreground transition-all group/link"
                     >
-                      GitHub{" "}
-                      <ExternalLink
-                        size={12}
-                        className="group-hover/link:translate-x-0.5 transition-transform"
+                      SOURCE
+                      <ArrowUpRight
+                        size={14}
+                        className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"
                       />
                     </a>
                   </div>
