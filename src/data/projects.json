@@ -75,5 +75,78 @@
 		"image": "/images/modern-login-page.png",
 		"featured": false,
 		"alarm": false
+	},
+	{
+		"id": 5,
+		"title": "Ob-Havo Bot",
+		"description": "Yer yuzasidagi istalgan shaharning real vaqtdagi obi havosi haqida malumotlarni olish uchun yaratilgan telegram bot.",
+		"techStack": [
+			"JavaScript",
+			"Node.js",
+			"Express",
+			"Telegraf.js",
+			"OpenWeatherMap API"
+		],
+		"githubLink": "https://github.com/AdhamRashidov/Ob-Havo-bot",
+		"liveDemo": "https://t.me/Ob1Hav0_bot",
+		"image": "/images/ob-havo-bot.png",
+		"featured": false,
+		"alarm": false
+	},
+	{
+		"id": 6,
+		"title": "Online Valyuta Kursi Bot",
+		"description": "Xoxlagan paytda valyuta kursidan xabardor bo'lish uchun qaysidir App yoki web sahifaga kirib qidirish foydalanuvchi uchun biroz noqulay va vaqt olgani uchun bu bot istalgan paytda valyuta kursidagi o'zgarishlarni ko'rish uchun yaratilgan.",
+		"techStack": [
+			"JavaScript",
+			"Node.js",
+			"Express",
+			"Telegraf.js",
+			"Exchange Rate API"
+		],
+		"githubLink": "https://github.com/AdhamRashidov/online-valuta-course-bot",
+		"liveDemo": "https://t.me/Online_Valuta_Course_bot",
+		"image": "/images/valuta-course-bot.png",
+		"featured": false,
+		"alarm": false
+	},
+	{
+		"id": 7,
+		"title": "Media Saver Bot",
+		"description": "Foydalanuvchilar uchun faqatgina instagram yoki tik tok emas balki youtube, twitter, snapchat xullas va hokazo xoxlagan platformadan videolarni yuklash va talabga qarab videolarni text, audio va video ga ahratib berish uchun yaratilgan bot",
+		"techStack": [
+			"JavaScript",
+			"Node.js",
+			"Nest.js",
+			"Telegraf.js",
+			"yt-dlp-exec"
+		],
+		"githubLink": "https://github.com/AdhamRashidov/mediaSaver-bot",
+		"liveDemo": "https://t.me/saveMedia_universal_bot",
+		"image": "/images/",
+		"featured": false,
+		"alarm": false
+	},
+	{
+		"id": 8,
+		"title": "Help Me Help You Crm system",
+		"description": "O'quv markazlari uchun Admin, teacher va Studentni birlashtiradigan dars jarayonlari va uyga vazifalar hamda markaz moliyaviy hisob kitoblari va har qanday jarajonni raqamlashtirish uchun yaratilgan tizim. Adminka, Teacher Panel va Studentlar uchun telegram miniApp dan iborat.",
+		"techStack": [
+			"TypeScript",
+			"Node.js",
+			"Nest.js",
+			"typeOrm",
+			"React",
+			"Tailwind CSS",
+			"ShadcnUI",
+			"Telegraf.js",
+			"JWT auth",
+			"Google Auth"
+		],
+		"githubLink": "https://github.com/AdhamRashidov/mediaSaver-bot",
+		"liveDemo": "https://t.me/saveMedia_universal_bot",
+		"image": "/images/hmhy.png",
+		"featured": false,
+		"alarm": false
 	}
 ]

@@ -120,7 +120,7 @@ export const Projects = () => {
                     {project.title}
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+                <p className="text-muted-foreground text-sm leading-relaxed line-clamp-4 overflow-scroll">
                   {project.description}
                 </p>
               </div>
