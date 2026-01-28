@@ -143,10 +143,10 @@
 			"JWT auth",
 			"Google Auth"
 		],
-		"githubLink": "https://github.com/AdhamRashidov/mediaSaver-bot",
-		"liveDemo": "https://t.me/saveMedia_universal_bot",
+		"githubLink": "https://github.com/AdhamRashidov/hmhy-front",
+		"liveDemo": "https://hmhy-front.vercel.app/",
 		"image": "/images/hmhy.png",
-		"featured": false,
+		"featured": true,
 		"alarm": false
 	}
 ]
