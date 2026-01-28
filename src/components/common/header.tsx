@@ -3,7 +3,7 @@ import { ThemeToggle } from "@/utils/themetoggle";
 import { Button } from "@/custom/button";
 import { useState, useEffect } from "react";
 import resume from "@/assets/Adham_FullStack.DEV.pdf";
-import man from "@/assets/man.png";
+import man from "@/assets/images/man.png";
 
 import {
   Dialog,

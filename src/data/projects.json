@@ -1,31 +1,79 @@
 [
 	{
 		"id": 1,
-		"title": "E-Commerce API",
-		"description": "Node.js va Express yordamida qurilgan to'liq backend tizimi. JWT autentifikatsiya va Stripe to'lov tizimi integratsiyasi bor.",
+		"title": "Inter-Taxi",
+		"description": "Node.js va Nest.js yordamida qurilgan to'liq backend RestApi. JWT autentifikatsiya, google Auth, real time ishlaydigan xarita va to'lov tizimi integratsiyasi bor.",
 		"techStack": [
 			"Node.js",
-			"Express",
-			"MongoDB",
-			"Redis"
+			"Nest.js",
+			"PostgreSql",
+			"Redis",
+			"React",
+			"Tailwind CSS",
+			"ShadcnUI",
+			"TypeScript",
+			"Prisma"
 		],
-		"githubLink": "https://github.com/username/project",
-		"liveDemo": "https://demo.com",
-		"image": "/images/project1.jpg",
-		"featured": true
+		"githubLink": null,
+		"liveDemo": null,
+		"image": "/images/inter-taxi.png",
+		"featured": true,
+		"alarm": true
 	},
 	{
 		"id": 2,
-		"title": "Real-time Chat App",
-		"description": "Socket.io yordamida yaratilgan tezkor xabarlashuv ilovasi.",
+		"title": "MediGo",
+		"description": "Node.js da qurilgan to'liq backend MicroService. JWT autentifikatsiya, google Auth, wobsocket yozdamida real time chat, Ai bilan integratsiya Doctor va bemorlar o'rtasidagi og'riqli masalalarni bartaraf etish uchun yaratilgan tizim",
 		"techStack": [
 			"React",
 			"Socket.io",
-			"Tailwind CSS"
+			"Tailwind CSS",
+			"Nest.js",
+			"PostgreSql",
+			"python",
+			"Redis",
+			"TypeScript",
+			"typeOrm"
 		],
-		"githubLink": "https://github.com/username/chat",
+		"githubLink": null,
 		"liveDemo": null,
 		"image": "/images/project2.jpg",
-		"featured": false
+		"featured": true,
+		"alarm": true
+	},
+	{
+		"id": 3,
+		"title": "Car Rental",
+		"description": "Node.js da qurilgan to'liq backend tizim RestApi. JWT autentifikatsiya, wobsocket yozdamida real time xarita, istalgan turdagi avtomobillarni tez va oson ijaraja olish yoki ijaraga berishni raqamlashtirilgan versiyasi.",
+		"techStack": [
+			"React",
+			"web-socket",
+			"Tailwind CSS",
+			"Nest.js",
+			"PostgreSql",
+			"TypeScript",
+			"Prisma",
+			"Graphql"
+		],
+		"githubLink": null,
+		"liveDemo": null,
+		"image": "/images/car-rental.png",
+		"featured": false,
+		"alarm": true
+	},
+	{
+		"id": 4,
+		"title": "Modern Login Page",
+		"description": "Sunchaki qiziqish uchun JavaScript va HTML, CSS dan foydalaniv user uchun tushunarli va chiroyli interfacega esa yengil animatsiyali login page yaratilgan",
+		"techStack": [
+			"JavaScript",
+			"HTML5",
+			"CSS"
+		],
+		"githubLink": "https://github.com/AdhamRashidov/modern-login-page",
+		"liveDemo": "https://modern-login-page-mu.vercel.app/",
+		"image": "/images/modern-login-page.png",
+		"featured": false,
+		"alarm": false
 	}
 ]

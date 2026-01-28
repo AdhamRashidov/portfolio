@@ -1,5 +1,5 @@
 import projectsData from "@/data/projects.json";
-import { ExternalLink, Github, Layers, Code2 } from "lucide-react";
+import { ExternalLink, Github, Layers, Code2, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -41,7 +41,7 @@ export const Projects = () => {
             asChild
           >
             <a
-              href="https://github.com/username"
+              href="https://github.com/AdhamRashidov"
               target="_blank"
               rel="noreferrer"
             >
@@ -87,9 +87,15 @@ export const Projects = () => {
                   className="rounded-full shadow-xl translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                   asChild
                 >
-                  <a href={project.githubLink} target="_blank" rel="noreferrer">
-                    <Github size={20} />
-                  </a>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Github size={20} />
+                    </a>
+                  )}
                 </Button>
                 {project.liveDemo && (
                   <Button
@@ -107,7 +113,7 @@ export const Projects = () => {
             </div>
 
             {/* Kontent va Ma'lumotlar */}
-            <div className="p-8 flex flex-col grow space-y-6">
+            <div className="p-8 flex flex-col grow space-y-3">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <h3 className="text-2xl font-bold group-hover:text-primary transition-colors italic leading-none tracking-tight">
@@ -119,16 +125,21 @@ export const Projects = () => {
                 </p>
               </div>
 
-              {/* Tech Stack - Piktogrammalar o'rniga zamonaviy badge-lar */}
-              <div className="flex flex-wrap gap-2 pt-2">
-                {project.techStack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-[10px] font-mono font-bold text-primary bg-primary/5 px-3 py-1 rounded-full border border-primary/10 uppercase tracking-tighter"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              <div className="relative group pt-4">
+                {/* Yonga scroll bo'ladigan konteyner */}
+                <div className="flex flex-nowrap overflow-x-auto gap-3 pb-3 no-scrollbar scroll-smooth">
+                  {project.techStack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="shrink-0 cursor-pointer text-[10px] font-mono font-bold text-foreground/70 
+                   bg-secondary/30 px-3 py-1 rounded-lg border border-white/5
+                   shadow-[2px_2px_5px_rgba(0,0,0,0.3),-1px_-1px_3px_rgba(255,255,255,0.05)]
+                   hover:shadow-none hover:translate-y-px hover:text-primary transition-all uppercase tracking-tight"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
 
               {/* Pastki tugmalar (Mobil va qulaylik uchun) */}
@@ -139,9 +150,15 @@ export const Projects = () => {
                   className="gap-2 rounded-xl px-6 font-bold group/btn"
                   asChild
                 >
-                  <a href={project.githubLink} target="_blank" rel="noreferrer">
-                    <Github size={16} /> Code
-                  </a>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Github size={16} /> Code
+                    </a>
+                  )}
                 </Button>
 
                 {project.liveDemo && (
@@ -155,6 +172,18 @@ export const Projects = () => {
                       <ExternalLink size={16} /> Live
                     </a>
                   </Button>
+                )}
+
+                {project.alarm && (
+                  <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-muted/30 border border-border/50">
+                    <Lock className="w-4 h-4 text-muted-foreground/60" />
+                    <p className="text-[11px] md:text-xs text-muted-foreground font-mono leading-tight">
+                      <span className="text-primary/70 font-bold">
+                        // PRIVATE_MODULE:
+                      </span>
+                      Mualliflik huquqi sababli manba kodi va demo yopiq.
+                    </p>
+                  </div>
                 )}
               </div>
             </div>

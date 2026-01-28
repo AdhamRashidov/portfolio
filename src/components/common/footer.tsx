@@ -41,7 +41,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Left: Copyright */}
-          <div className="text-sm text-muted-foreground order-2 md:order-1">
+          <div className="text-sm text-muted-foreground order-2 md:order-1 text-center text-balance md:text-left">
             © {currentYear} Created with 🤍 by AdhamRashidov. Built with React &
             Tailwind.
           </div>
