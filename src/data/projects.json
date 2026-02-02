@@ -43,23 +43,18 @@
 	},
 	{
 		"id": 3,
-		"title": "Car Rental",
-		"description": "Node.js da qurilgan to'liq backend tizim RestApi. JWT autentifikatsiya, wobsocket yozdamida real time xarita, istalgan turdagi avtomobillarni tez va oson ijaraja olish yoki ijaraga berishni raqamlashtirilgan versiyasi.",
+		"title": "front-exam-1-month",
+		"description": "React da JavaScript + Tailwind CSS yordamida yasalgan figma design kurs 1-oyi imtihoni uchun",
 		"techStack": [
-			"React",
-			"web-socket",
 			"Tailwind CSS",
-			"Nest.js",
-			"PostgreSql",
-			"TypeScript",
-			"Prisma",
-			"Graphql"
+			"JavaScript",
+			"React + Vite"
 		],
-		"githubLink": null,
-		"liveDemo": null,
-		"image": "/images/car-rental.png",
+		"githubLink": "https://github.com/AdhamRashidov/front-exam-1-month",
+		"liveDemo": "https://front-exam-1-month.vercel.app/",
+		"image": "/images/",
 		"featured": false,
-		"alarm": true
+		"alarm": false
 	},
 	{
 		"id": 4,

@@ -187,71 +187,74 @@ export const About = () => {
                     className="h-56 rounded-2xl bg-muted/20 animate-pulse border border-border/50"
                   />
                 ))
-            : topRepos?.map((repo: any) => (
-                <div
-                  key={repo.id}
-                  className="group relative p-6 border border-primary/10 rounded-2xl bg-linear-to-br from-card to-background hover:border-primary/40 transition-all duration-500 hover:-translate-y-1"
-                >
-                  {/* Yuqori dekorativ chiziq (Terminal darchasi kabi) */}
-                  <div className="absolute top-0 left-6 right-6 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent" />
+            : topRepos?.map((repo: any) => {
+                console.log(repo, ".......");
+                return (
+                  <div
+                    key={repo.id}
+                    className="group relative p-6 border border-primary/10 rounded-2xl bg-linear-to-br from-card to-background hover:border-primary/40 transition-all duration-500 hover:-translate-y-1"
+                  >
+                    {/* Yuqori dekorativ chiziq (Terminal darchasi kabi) */}
+                    <div className="absolute top-0 left-6 right-6 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent" />
 
-                  <div className="flex items-start justify-between mb-5">
-                    {/* Ikonka: Code style */}
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                      <div className="relative p-2.5 bg-card border  rounded-xl text-primary">
-                        <Code2 size={20} strokeWidth={2.5} />
+                    <div className="flex items-start justify-between mb-5">
+                      {/* Ikonka: Code style */}
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <div className="relative p-2.5 bg-card border  rounded-xl text-primary">
+                          <Code2 size={20} strokeWidth={2.5} />
+                        </div>
+                      </div>
+
+                      {/* Star count: Dev style */}
+                      <div className="flex items-center gap-1.5 px-2 py-1 rounded-md bg-sidebar border text-[10px] font-mono font-bold text-yellow-500/80">
+                        <Star size={11} className="fill-yellow-500/20" />
+                        <span>
+                          {repo.stargazers_count.toString().padStart(2, "0")}
+                        </span>
                       </div>
                     </div>
 
-                    {/* Star count: Dev style */}
-                    <div className="flex items-center gap-1.5 px-2 py-1 rounded-md bg-sidebar border text-[10px] font-mono font-bold text-yellow-500/80">
-                      <Star size={11} className="fill-yellow-500/20" />
-                      <span>
-                        {repo.stargazers_count.toString().padStart(2, "0")}
-                      </span>
+                    {/* Repo Name: Shell path style */}
+                    <h4 className="font-mono font-bold text-base mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
+                      <span className="text-primary/50 text-xs">~/</span>
+                      {repo.name}
+                    </h4>
+
+                    {/* Description */}
+                    <p className="text-xs text-muted-foreground line-clamp-2 mb-6 h-8 font-sans leading-relaxed overflow-scroll">
+                      {repo.description ||
+                        "// No documentation provided for this module."}
+                    </p>
+
+                    {/* Footer: Metadata & Link */}
+                    <div className="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                      {/* Language: Status Badge */}
+                      <div className="flex items-center gap-2">
+                        <div
+                          className={`w-2 h-2 rounded-full animate-pulse ${repo.language ? "bg-primary" : "bg-zinc-600"}`}
+                        />
+                        <span className="text-[10px] font-mono font-bold text-foreground/70 uppercase tracking-tighter">
+                          {repo.language || "Binary"}
+                        </span>
+                      </div>
+
+                      <a
+                        href={repo.html_url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-primary/5 border border-primary/10 text-[11px] font-bold hover:bg-primary hover:text-primary-foreground transition-all group/link"
+                      >
+                        SOURCE
+                        <ArrowUpRight
+                          size={14}
+                          className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"
+                        />
+                      </a>
                     </div>
                   </div>
-
-                  {/* Repo Name: Shell path style */}
-                  <h4 className="font-mono font-bold text-base mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
-                    <span className="text-primary/50 text-xs">~/</span>
-                    {repo.name}
-                  </h4>
-
-                  {/* Description */}
-                  <p className="text-xs text-muted-foreground line-clamp-2 mb-6 h-8 font-sans leading-relaxed">
-                    {repo.description ||
-                      "// No documentation provided for this module."}
-                  </p>
-
-                  {/* Footer: Metadata & Link */}
-                  <div className="flex items-center justify-between pt-4 border-t border-zinc-800/50">
-                    {/* Language: Status Badge */}
-                    <div className="flex items-center gap-2">
-                      <div
-                        className={`w-2 h-2 rounded-full animate-pulse ${repo.language ? "bg-primary" : "bg-zinc-600"}`}
-                      />
-                      <span className="text-[10px] font-mono font-bold text-foreground/70 uppercase tracking-tighter">
-                        {repo.language || "Binary"}
-                      </span>
-                    </div>
-
-                    <a
-                      href={repo.html_url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-primary/5 border border-primary/10 text-[11px] font-bold hover:bg-primary hover:text-primary-foreground transition-all group/link"
-                    >
-                      SOURCE
-                      <ArrowUpRight
-                        size={14}
-                        className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"
-                      />
-                    </a>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
         </div>
       </div>
     </section>
