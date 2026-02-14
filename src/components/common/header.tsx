@@ -2,7 +2,7 @@ import { CopyButton } from "@/utils/copyButton";
 import { ThemeToggle } from "@/utils/themetoggle";
 import { Button } from "@/custom/button";
 import { useState, useEffect } from "react";
-import resume from "@/assets/Adham_FullStack.DEV.pdf";
+import resume from "@/assets/Adham-Rashidov-Resume.pdf";
 import man from "@/assets/images/man.png";
 
 import {
