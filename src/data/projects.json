@@ -137,5 +137,26 @@
 		"image": "/images/hmhy.png",
 		"featured": true,
 		"alarm": false
+	},
+	{
+		"id": 9,
+		"title": "MediGo",
+		"description": "Node.js da qurilgan to'liq backend MicroService. JWT autentifikatsiya, google Auth, wobsocket yozdamida real time chat, Ai bilan integratsiya Doctor va bemorlar o'rtasidagi og'riqli masalalarni bartaraf etish uchun yaratilgan tizim",
+		"techStack": [
+			"React",
+			"Socket.io",
+			"Tailwind CSS",
+			"Nest.js",
+			"PostgreSql",
+			"python",
+			"Redis",
+			"TypeScript",
+			"typeOrm"
+		],
+		"githubLink": null,
+		"liveDemo": null,
+		"image": "/images/project2.jpg",
+		"featured": true,
+		"alarm": true
 	}
 ]
