@@ -22,24 +22,18 @@
 	},
 	{
 		"id": 2,
-		"title": "MediGo",
-		"description": "Node.js da qurilgan to'liq backend MicroService. JWT autentifikatsiya, google Auth, wobsocket yozdamida real time chat, Ai bilan integratsiya Doctor va bemorlar o'rtasidagi og'riqli masalalarni bartaraf etish uchun yaratilgan tizim",
+		"title": "TenzorTeam App",
+		"description": "Next.js ni o'rganish maqsadida experiment tariqasida yozilgan kichik amaliy loyiha",
 		"techStack": [
-			"React",
-			"Socket.io",
+			"NextJs",
 			"Tailwind CSS",
-			"Nest.js",
-			"PostgreSql",
-			"python",
-			"Redis",
-			"TypeScript",
-			"typeOrm"
+			"TypeScript"
 		],
-		"githubLink": null,
-		"liveDemo": null,
-		"image": "/images/project2.jpg",
-		"featured": true,
-		"alarm": true
+		"githubLink": "https://github.com/AdhamRashidov/TenzorTeam-App",
+		"liveDemo": "https://tenzor-team-app.vercel.app/users",
+		"image": null,
+		"featured": false,
+		"alarm": false
 	},
 	{
 		"id": 3,
