@@ -57,6 +57,27 @@
 		"alarm": true
 	},
 	{
+		"id": 1,
+		"title": "Inter-Taxi",
+		"description": "Node.js va Nest.js yordamida qurilgan to'liq backend RestApi. JWT autentifikatsiya, google Auth, real time ishlaydigan xarita va to'lov tizimi integratsiyasi bor.",
+		"techStack": [
+			"Node.js",
+			"Nest.js",
+			"PostgreSql",
+			"Redis",
+			"React",
+			"Tailwind CSS",
+			"ShadcnUI",
+			"TypeScript",
+			"Prisma"
+		],
+		"githubLink": null,
+		"liveDemo": null,
+		"image": "/images/inter-taxi.png",
+		"featured": true,
+		"alarm": true
+	},
+	{
 		"id": 3,
 		"title": "front-exam-1-month",
 		"description": "React da JavaScript + Tailwind CSS yordamida yasalgan figma design kurs 1-oyi imtihoni uchun",
