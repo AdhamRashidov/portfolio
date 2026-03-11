@@ -19,5 +19,56 @@
 		"image": "/images/project2.jpg",
 		"featured": true,
 		"alarm": true
+	},
+	{
+		"id": 2,
+		"title": "TenzorTeam App",
+		"description": "Next.js ni o'rganish maqsadida experiment tariqasida yozilgan kichik amaliy loyiha",
+		"techStack": [
+			"NextJs",
+			"Tailwind CSS",
+			"TypeScript"
+		],
+		"githubLink": "https://github.com/AdhamRashidov/TenzorTeam-App",
+		"liveDemo": "https://tenzor-team-app.vercel.app/users",
+		"image": "/images/",
+		"featured": false,
+		"alarm": false
+	},
+	{
+		"id": 9,
+		"title": "MediGo",
+		"description": "Node.js da qurilgan to'liq backend MicroService. JWT autentifikatsiya, google Auth, wobsocket yozdamida real time chat, Ai bilan integratsiya Doctor va bemorlar o'rtasidagi og'riqli masalalarni bartaraf etish uchun yaratilgan tizim",
+		"techStack": [
+			"React",
+			"Socket.io",
+			"Tailwind CSS",
+			"Nest.js",
+			"PostgreSql",
+			"python",
+			"Redis",
+			"TypeScript",
+			"typeOrm"
+		],
+		"githubLink": null,
+		"liveDemo": null,
+		"image": "/images/project2.jpg",
+		"featured": true,
+		"alarm": true
+	},
+	{
+		"id": 3,
+		"title": "front-exam-1-month",
+		"description": "React da JavaScript + Tailwind CSS yordamida yasalgan figma design kurs 1-oyi imtihoni uchun",
+		"techStack": [
+			"Tailwind CSS",
+			"JavaScript",
+			"React + Vite"
+		],
+		"githubLink": "https://github.com/AdhamRashidov/front-exam-1-month",
+		"liveDemo": "https://front-exam-1-month.vercel.app/",
+		"image": "/images/",
+		"featured": false,
+		"alarm": false
 	}
 ]

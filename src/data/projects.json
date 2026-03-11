@@ -22,36 +22,6 @@
 	},
 	{
 		"id": 2,
-		"title": "TenzorTeam App",
-		"description": "Next.js ni o'rganish maqsadida experiment tariqasida yozilgan kichik amaliy loyiha",
-		"techStack": [
-			"NextJs",
-			"Tailwind CSS",
-			"TypeScript"
-		],
-		"githubLink": "https://github.com/AdhamRashidov/TenzorTeam-App",
-		"liveDemo": "https://tenzor-team-app.vercel.app/users",
-		"image": "/images/",
-		"featured": false,
-		"alarm": false
-	},
-	{
-		"id": 3,
-		"title": "front-exam-1-month",
-		"description": "React da JavaScript + Tailwind CSS yordamida yasalgan figma design kurs 1-oyi imtihoni uchun",
-		"techStack": [
-			"Tailwind CSS",
-			"JavaScript",
-			"React + Vite"
-		],
-		"githubLink": "https://github.com/AdhamRashidov/front-exam-1-month",
-		"liveDemo": "https://front-exam-1-month.vercel.app/",
-		"image": "/images/",
-		"featured": false,
-		"alarm": false
-	},
-	{
-		"id": 4,
 		"title": "Modern Login Page",
 		"description": "Sunchaki qiziqish uchun JavaScript va HTML, CSS dan foydalaniv user uchun tushunarli va chiroyli interfacega esa yengil animatsiyali login page yaratilgan",
 		"techStack": [
@@ -66,7 +36,7 @@
 		"alarm": false
 	},
 	{
-		"id": 5,
+		"id": 3,
 		"title": "Ob-Havo Bot",
 		"description": "Yer yuzasidagi istalgan shaharning real vaqtdagi obi havosi haqida malumotlarni olish uchun yaratilgan telegram bot.",
 		"techStack": [
@@ -83,7 +53,7 @@
 		"alarm": false
 	},
 	{
-		"id": 6,
+		"id": 4,
 		"title": "Online Valyuta Kursi Bot",
 		"description": "Xoxlagan paytda valyuta kursidan xabardor bo'lish uchun qaysidir App yoki web sahifaga kirib qidirish foydalanuvchi uchun biroz noqulay va vaqt olgani uchun bu bot istalgan paytda valyuta kursidagi o'zgarishlarni ko'rish uchun yaratilgan.",
 		"techStack": [
@@ -100,7 +70,7 @@
 		"alarm": false
 	},
 	{
-		"id": 7,
+		"id": 5,
 		"title": "Media Saver Bot",
 		"description": "Foydalanuvchilar uchun faqatgina instagram yoki tik tok emas balki youtube, twitter, snapchat xullas va hokazo xoxlagan platformadan videolarni yuklash va talabga qarab videolarni text, audio va video ga ahratib berish uchun yaratilgan bot",
 		"techStack": [
@@ -117,7 +87,7 @@
 		"alarm": false
 	},
 	{
-		"id": 8,
+		"id": 6,
 		"title": "Help Me Help You Crm system",
 		"description": "O'quv markazlari uchun Admin, teacher va Studentni birlashtiradigan dars jarayonlari va uyga vazifalar hamda markaz moliyaviy hisob kitoblari va har qanday jarajonni raqamlashtirish uchun yaratilgan tizim. Adminka, Teacher Panel va Studentlar uchun telegram miniApp dan iborat.",
 		"techStack": [
@@ -133,30 +103,25 @@
 			"Google Auth"
 		],
 		"githubLink": "https://github.com/AdhamRashidov/hmhy-front",
-		"liveDemo": "https://hmhy-front.vercel.app/",
+		"liveDemo": null,
 		"image": "/images/hmhy.png",
 		"featured": true,
 		"alarm": false
 	},
 	{
-		"id": 9,
-		"title": "MediGo",
-		"description": "Node.js da qurilgan to'liq backend MicroService. JWT autentifikatsiya, google Auth, wobsocket yozdamida real time chat, Ai bilan integratsiya Doctor va bemorlar o'rtasidagi og'riqli masalalarni bartaraf etish uchun yaratilgan tizim",
+		"id": 7,
+		"title": "So'rovnoma App",
+		"description": "Ushbu ilova Startup validation jarayonini osonlashtirish uchun yaratilgan. (Batafsil ilovada!) o'tish va sinab ko'rish uchun Live tugmasini bosing",
 		"techStack": [
-			"React",
-			"Socket.io",
-			"Tailwind CSS",
-			"Nest.js",
-			"PostgreSql",
-			"python",
-			"Redis",
 			"TypeScript",
-			"typeOrm"
+			"Neon PostgreSql",
+			"NextJs",
+			"Tailwind CSS"
 		],
-		"githubLink": null,
-		"liveDemo": null,
-		"image": "/images/project2.jpg",
+		"githubLink": "https://github.com/AdhamRashidov/SorovnomaApp",
+		"liveDemo": "https://sorovnoma-app.vercel.app/",
+		"image": "/images/sorovnoma-app.png",
 		"featured": true,
-		"alarm": true
+		"alarm": false
 	}
 ]
