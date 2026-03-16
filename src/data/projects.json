@@ -1,18 +1,21 @@
 [
 	{
 		"id": 1,
-		"title": "Modern Login Page",
-		"description": "Sunchaki qiziqish uchun JavaScript va HTML, CSS dan foydalaniv user uchun tushunarli va chiroyli interfacega esa yengil animatsiyali login page yaratilgan",
+		"title": "Pokla Ai",
+		"description": "Oziq ovqat mahsulotlarini kaloriyasi qanchaligini va Halol sertifikati bor yoki yo'qligini O'zbekiston musulmonlar idorasi fatvo markazi tomonidan tasdiqlangan ishonchli malumotlar asosida aniqlab beradigan Ai dietolog maslahatchiga ega bo'lgan kunlik kaloriya sarfingiz maqsadingiz va shunga o'xshash talablarizni bajaradigan hisoblab tartiblaydigan mobile App. ",
 		"techStack": [
-			"JavaScript",
-			"HTML5",
-			"CSS"
+			"TypeScript",
+			"React",
+			"Tailwind CSS",
+			"ShadcnUI",
+			"Tanstaks Query"
 		],
-		"githubLink": "https://github.com/AdhamRashidov/modern-login-page",
-		"liveDemo": "https://modern-login-page-mu.vercel.app/",
-		"image": "/images/modern-login-page.png",
-		"featured": false,
-		"alarm": false
+		"githubLink": null,
+		"liveDemo": null,
+		"image": "/images/pokla-ai.png",
+		"featured": true,
+		"alarm": false,
+		"process": true
 	},
 	{
 		"id": 2,
@@ -59,11 +62,11 @@
 			"Telegraf.js",
 			"yt-dlp-exec"
 		],
-		"githubLink": "https://github.com/AdhamRashidov/mediaSaver-bot",
-		"liveDemo": "https://t.me/saveMedia_universal_bot",
+		"githubLink": null,
+		"liveDemo": null,
 		"image": "/images/media-saver-bot.png",
 		"featured": false,
-		"alarm": false
+		"alarm": true
 	},
 	{
 		"id": 5,
@@ -101,6 +104,7 @@
 		"liveDemo": "https://sorovnoma-app.vercel.app/",
 		"image": "/images/sorovnoma-app.png",
 		"featured": true,
-		"alarm": false
+		"alarm": false,
+		"process": true
 	}
 ]

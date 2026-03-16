@@ -143,7 +143,7 @@ export const Projects = () => {
               </div>
 
               {/* Pastki tugmalar (Mobil va qulaylik uchun) */}
-              <div className="flex items-center gap-4 pt-6 mt-auto border-t border-border/50">
+              <div className="flex items-center gap-4 pt-6 mt-auto border-t border-border/50 ">
                 <Button
                   variant="default"
                   size="sm"
@@ -184,6 +184,22 @@ export const Projects = () => {
                       Mualliflik huquqi sababli manba kodi va demo yopiq.
                     </p>
                   </div>
+                )}
+
+                {project.process && (
+                  <button className="group relative font-mono text-[14px] font-medium text-green-600 transition-all duration-300">
+                    <div className="absolute inset-0 rounded-xl blur-lg transition-all duration-300 group-hover:bg-green-500/40 group-active:blur-md"></div>
+
+                    <div className="relative flex items-center justify-center gap-3 rounded-xl border border-green-500/30 bg-accent px-3 py-1.5 backdrop-blur-md transition-all duration-300 group-hover:border-green-500 group-active:scale-95">
+                
+
+                      <span>Process</span>
+                      <div className="relative h-4 w-4">
+                        <span className="absolute inset-0 rounded-full border-2 border-green-500/20"></span>
+                        <span className="absolute inset-0 animate-spin rounded-full border-2 border-transparent border-t-green-500"></span>
+                      </div>
+                    </div>
+                  </button>
                 )}
               </div>
             </div>

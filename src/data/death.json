@@ -91,5 +91,20 @@
 		"image": "/images/",
 		"featured": false,
 		"alarm": false
+	},
+	{
+		"id": 1,
+		"title": "Modern Login Page",
+		"description": "Sunchaki qiziqish uchun JavaScript va HTML, CSS dan foydalaniv user uchun tushunarli va chiroyli interfacega esa yengil animatsiyali login page yaratilgan",
+		"techStack": [
+			"JavaScript",
+			"HTML5",
+			"CSS"
+		],
+		"githubLink": "https://github.com/AdhamRashidov/modern-login-page",
+		"liveDemo": "https://modern-login-page-mu.vercel.app/",
+		"image": "/images/modern-login-page.png",
+		"featured": false,
+		"alarm": false
 	}
 ]
