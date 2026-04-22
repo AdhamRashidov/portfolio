@@ -10,7 +10,7 @@
 			"Nest.js",
 			"PostgreSql",
 			"python",
-			"Redis",
+			"Redis",  
 			"TypeScript",
 			"typeOrm"
 		],
