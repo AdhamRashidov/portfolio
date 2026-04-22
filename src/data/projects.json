@@ -19,7 +19,7 @@
 	},
 	{
 		"id": 2,
-		"title": "Ob-Havo Bot",
+		"title": "Obi Havo Bot",
 		"description": "Yer yuzasidagi istalgan shaharning real vaqtdagi obi havosi haqida malumotlarni olish uchun yaratilgan telegram bot.",
 		"techStack": [
 			"JavaScript",
@@ -62,11 +62,11 @@
 			"Telegraf.js",
 			"yt-dlp-exec"
 		],
-		"githubLink": null,
-		"liveDemo": null,
+		"githubLink": "https://github.com/AdhamRashidov/Media-Saver-Bot.git",
+		"liveDemo": "https://t.me/saveMedia_universal_bot",
 		"image": "/images/media-saver-bot.png",
 		"featured": false,
-		"alarm": true
+		"alarm": false
 	},
 	{
 		"id": 5,
